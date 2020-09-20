@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="menu">
+		<div id="item">DropDown</div>
+		<div id="submenu">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</div>
+
+
+	<script>
+		$(function(){
+			$("#item").click(function(){
+				$("#submenu").slideToggle(500);
+			});
+		});
+	</script>
+</body>
+</html>
